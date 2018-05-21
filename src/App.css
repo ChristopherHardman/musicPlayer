@@ -1,0 +1,160 @@
+#musicPlayer {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#musicPlayerUpper {
+  width: 98%;
+  height: 65%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#songList {
+  width: 55%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.songListEntry {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  border-bottom: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+
+.songListEntry:hover {
+    font-weight: bold;
+}
+
+.songListEntryName {
+  width: 40%;
+  text-align: left;
+}
+
+.songListEntryArtist {
+  width: 50%;
+  text-align: left;
+}
+
+.songListEntryDuration {
+  width: 10%;
+  text-align: left;
+}
+
+
+#image {
+  width: 45%;
+  height: 95%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#songDescription {
+  height: 15px;
+  font-size: 12px;
+  width: 75%;
+}
+
+#controlPanel {
+  width: 50%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#stopButton{
+  height: 40px;
+  width: 40px;
+  background-color: #D8382E;
+  cursor: pointer;
+}
+
+
+#pauseButton{
+  height: 40px;
+  width: 40px;
+  background-color: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#pauseButton div {
+  height: 100%;
+  width: 33%;
+  background-color: #FFC300;
+}
+
+#playButton {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid #29AE64;
+  cursor: pointer;
+}
+
+#timer {
+  width: 90%;
+  height: 15%;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#timerBarHolder {
+  width: 400px;
+  height: 10px;
+  border: 1px solid grey;
+}
+
+#timerBar {
+  background-color: blue;
+  height: 10px;
+}
+
+@media screen and (max-width:700px) {
+
+  #musicPlayer {
+    width: 350px;
+    height: auto;
+  }
+
+  #musicPlayerUpper {
+    flex-direction: column;
+  }
+
+  #songList {
+    width: 100%;
+  }
+
+  #image {
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  #controlPanel {
+    width: 75%;
+    margin: 20px;
+  }
+
+}
